@@ -100,7 +100,7 @@ describe('Shopping List', function() {
                         stored.name.should.equal('Ted');
                         chai.request(app)
                             .delete('/items/' + stored._id)
-                            
+
                         .end(function(err, res) {
                             res.should.have.status(200);
                             res.body.name.should.have.length(3);
