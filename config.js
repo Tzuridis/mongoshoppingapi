@@ -1,7 +1,7 @@
 exports.DATABASE_URL = process.env.DATABASE_URL ||
     global.DATABASE_URL ||
     (process.env.NODE_ENV === 'production' ?
-    'mongodb://tzuridis:greece1124@ds029106.mlab.com:29106/mlab-shopping' :
+    'mongodb://tzuridis:Greece11241990@ds029106.mlab.com:29106/mlab-shopping' :
     // 'mongodb://localhost/shopping-list' :
     'mongodb://localhost/shopping-list-dev')
     // 'mongodb://<tzuridis>:<greece1124>@ds029106.mlab.com:29106/mlab-shopping'
