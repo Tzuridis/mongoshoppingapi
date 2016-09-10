@@ -6,8 +6,12 @@ var config = require('./config');
 
 var app = express();
 
+console.log(__dirname); 
+console.log(require('fs').existsSync(__dirname + '/public'));
+
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
+
 
 var Item = require('./models/items.js');
 
