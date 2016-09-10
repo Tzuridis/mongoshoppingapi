@@ -2,7 +2,11 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-var config = require('./config');
+var mongodbUri = 'mongodb://tzuridis:greece1124@ds029106.mlab.com:29106/mlab-shopping';
+
+mongoose.connect(mongodbUri);
+
+// var config = require('./config');
 
 var app = express();
 
