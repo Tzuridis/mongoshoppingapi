@@ -1,4 +1,4 @@
-global.DATABASE_URL = 'mongodb://localhost/shopping-list-test';
+global.DATABASE_URL = 'mongodb://shopping-list-test';
 //update
 var chai = require('chai');
 var chaiHttp = require('chai-http');
