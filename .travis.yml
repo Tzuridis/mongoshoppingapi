@@ -1,6 +1,6 @@
 language: node_js
 notifications:
-   email: false
+  email: false
 node_js: node
 services:
 - mongodb
@@ -10,3 +10,10 @@ addons:
     - mongodb-3.2-precise
     packages:
     - mongodb-org-server
+deploy:
+  provider: heroku
+  api_key:
+    secure: JyvIH9FjncWsAzjTBaWlRv7YCjPpPM8W9p8+VtpDWGey0lmxuMhMJmy39/1H6zEba8K8cmMxTT5Af84QtYeTpcRb+1vlK4Q8XU2wAobiu/YHWDWkirAgvC1heLR7TfoPnhbi8IEHu2AvywvE/PBH/Raft3dX/OLkgMVroQyP5s0Y0x3ke3aeLbx3RgNNeiNzW3wwJS6tGsc7M65S5KmDT2K4cbYmj/XmDNOqGIP45lb058yV5vGIiFUJLxI0hU7MCiMzAud8dCZv0pjrEQeX7WOAETueP7fQXkeVtxHBUir6NHfdFYQRrleDws1FiON8dpK+U9/hoSJIt7KZNDsGi1iPlzJcvrlNfqLy1lPOcyd+BfLgPsA1EUGoC9PNxP+Hl4ryseBOlZvEG/RwLaxVC9dhXLCFDoRJw7KrzPH/A9Feoy/N4Rs6akVtBVSw8QHVPJP9vPFGCoMeN2ozuYLeUdbRkHSdFMgGB6s+F65S5NF8FsKTo5KVipc9rHhMg5CeUfGOrBQbwZ/bkq1of/f3dbnZ9huD3LPVezFKj+/S6jDIRq2tY1nG7JhFYOCav2upKvwDn7nOQyuT5a3MlPP0LHDl3YttUCGv++k/b21H0nRN4NWVvKlU+xX1oLHAFdq90LfMeNDYTtr6CQVlQSVMolaG8zGgUGjDNz9zD1q7kwY=
+  app: radiant-ravine-49754
+  on:
+    repo: Tzuridis/mongoshoppingapi
