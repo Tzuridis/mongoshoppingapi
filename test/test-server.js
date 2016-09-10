@@ -1,4 +1,4 @@
-global.DATABASE_URL = 'mongodb://tzuridis:greece1124@ds029106.mlab.com:29106/mlab-shopping';
+global.DATABASE_URL = 'mongodb://localhost/shopping-list-dev';
 //update
 var chai = require('chai');
 var chaiHttp = require('chai-http');
