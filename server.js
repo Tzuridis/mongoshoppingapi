@@ -7,7 +7,7 @@ var config = require('./config');
 var app = express();
 
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 var Item = require('./models/items.js');
 
